@@ -19,7 +19,7 @@ urlpatterns = [
     path('post/new/', PostCreateView.as_view(), name='post-create'),
     path('post/<int:pk>/update/', PostUpdateView.as_view(), name='post-update'), #tyo key vako wala post lai chai update garna milney
     path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post-delete'),
-    path('about/', views.about, name='blog-about'),
+    path('home/', views.about, name='blog-about'),
 
     # path('upload/', views.upload, name='cv-upload'),
     path('cvs/<int:pk>/', views.upload_cv_list, name='cv-upload-list'),
